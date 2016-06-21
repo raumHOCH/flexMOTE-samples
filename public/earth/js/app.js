@@ -12,26 +12,32 @@ var layout = {
         rows: 3,
         elements: [{
         }, {
-            type: "Button",
-            id: "up",
+            type: "ImgButton",
+            id: "img_button_up",
             action: "up",
-            label: "^"
+            buttonUrl: "http://localhost:3001/earth/images/arrow_double.png",
+            buttonStyle: "transform: rotate(90deg)"
         }, {}, {
-            type: "Button",
-            id: "left",
+            type: "ImgButton",
+            id: "img_button_left",
             action: "left",
-            label: "<"
-        }, {}, {
-            type: "Button",
-            id: "right",
+            buttonUrl: "http://localhost:3001/earth/images/arrow_double.png"
+        }, {
+          type: "Text",
+          id: "earthText",
+          content: "Click to Move"
+        }, {
+            type: "ImgButton",
+            id: "img_button_right",
             action: "right",
-            label: ">"
-        }, {
-        }, {
-            type: "Button",
-            id: "down",
+            buttonUrl: "http://localhost:3001/earth/images/arrow_double.png",
+            buttonStyle: "transform: rotate(180deg)"
+        }, {}, {
+            type: "ImgButton",
+            id: "img_button_down",
             action: "down",
-            label: "v"
+            buttonUrl: "http://localhost:3001/earth/images/arrow_double.png",
+            buttonStyle: "transform: rotate(-90deg)"
         }, {}]
     }
 };
@@ -83,7 +89,7 @@ flexMOTE.connection.on('disconnect', function() {
  */
 flexMOTE.connection.on('cmd', function(cmd) {
     switch (cmd.type) {
-        case 'button':
+        case 'imgButton':
             if (cmd.data.state == 'pressed') {
                 switch (cmd.id) {
                     case 'down':

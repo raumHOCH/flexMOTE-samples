@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#remote {
+  background: #000 url('http://localhost:3001/earth/images/galaxy_starfield.png') no-repeat center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+#qrcode img {
+    padding-bottom: 20px;
+}

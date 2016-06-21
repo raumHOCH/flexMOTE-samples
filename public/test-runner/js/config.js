@@ -24,7 +24,7 @@
 
     // ----- layouts -----------------------------------------------------------
     /**
-     * default chess layout
+     * default skin-app layout
      */
     Config.layouts['layout-1'] = {
         action: 'set',

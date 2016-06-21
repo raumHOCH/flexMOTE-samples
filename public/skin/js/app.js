@@ -10,7 +10,7 @@ flexMOTE.connection.on('connect', function() {
 
     // register a channel
     flexMOTE.register({
-        app: 'chess',
+        app: 'skin',
         version: '0.1.0',
         maxUsers: 2,
         timeout: 60 * 1000, // 60 seconds
@@ -78,3 +78,20 @@ $('#button-skin-2').on('click', function(event) {
     $('body').attr('id', 'skin-2');
     flexMOTE.sendCommand('*', Config.skins[Config.currentSkin]);
 });
+
+/**
+ * @param {Object} event
+ */
+$('#button-skin-3').on('click', function(event) {
+    Config.currentSkin = 'skin-3';
+    $('body').attr('id', 'skin-3');
+    flexMOTE.sendCommand('*', Config.skins[Config.currentSkin]);
+});
+
+/**
+ * @param {Object} event
+ */
+ $('.button').click(function() {
+       $(".button.active").removeClass("active");
+       $(this).addClass('active');
+ });
