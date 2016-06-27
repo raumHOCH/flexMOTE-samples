@@ -88,22 +88,26 @@ flexMOTE.connection.on('disconnect', function() {
  * @param {Object} cmd
  */
 flexMOTE.connection.on('cmd', function(cmd) {
+    console.log(cmd.id, cmd.type );
     switch (cmd.type) {
-        case 'imgButton':
+        case 'button':
             if (cmd.data.state == 'pressed') {
                 switch (cmd.id) {
-                    case 'down':
+                    case 'img_button_down':
                         window.mouse.y += 0.05;
                         break;
-                    case 'up':
+                    case 'img_button_up':
                         window.mouse.y -= 0.05;
                         break;
-                    case 'left':
+                    case 'img_button_left':
                         window.mouse.x += 0.05;
                         break;
-                    case 'right':
+                    case 'img_button_right':
                         window.mouse.x -= 0.05;
                         break;
+                    //case 'slider_x':
+                    //    window.mouse.x = cmd.value;
+                    //    break;
                 }
             }
 
