@@ -12,7 +12,7 @@ flexMOTE.connection.on('connect', function() {
     flexMOTE.register({
         app: 'skin',
         version: '0.1.0',
-        maxUsers: 2,
+        maxUsers: 20,
         timeout: 60 * 1000, // 60 seconds
         stickySessions: true
     }, function(status, room) {

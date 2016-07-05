@@ -86,3 +86,10 @@ flexMOTE.connection.on('cmd', function(cmd) {
     }
 
 });
+
+/**
+ * disable grey highlight on touch in mobile safari browsers
+ */
+document.addEventListener("touchstart", function(){
+
+}, true);
