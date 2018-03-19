@@ -36,6 +36,18 @@
 }
 
 /* different skin settings */
+#skin1{
+	background-color: lightsalmon;
+}
+
+#skin2{
+	background-color: lightseagreen;
+}
+
+#skin3{
+	background-color: mediumpurple;
+}
+
 #skin-1 #mouth,
 #skin-3 #mouth {
   transform: rotate(-90deg);
@@ -45,7 +57,7 @@
 
 #skin-2 #mouth {
   transform: rotate(90deg);
-  margin-left: -23px;
+  margin-left: 25px;
   margin-top: -48px;
 }
 
