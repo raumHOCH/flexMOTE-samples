@@ -36,16 +36,13 @@
 }
 
 /* different skin settings */
-#skin1{
-	background-color: lightsalmon;
+
+#skin-2 #remote{
+	background: lightseagreen;
 }
 
-#skin2{
-	background-color: lightseagreen;
-}
-
-#skin3{
-	background-color: mediumpurple;
+#skin-3 #remote{
+	background: lightsalmon;
 }
 
 #skin-1 #mouth,
